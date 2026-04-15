@@ -1,103 +1,67 @@
 🤖 Smart Resume Analyzer (AI-Powered)
+📌 Overview
 
-An intelligent web application that analyzes resumes using AI and provides instant feedback, keyword insights, and ATS-based scoring to help candidates improve their chances of getting hired.
+This project is an AI-powered web application that analyzes resumes and provides valuable insights such as ATS score, keyword matching, and improvement suggestions. It helps users optimize their resumes to increase their chances of getting selected in job applications.
 
-✨ Features
-🎨 Modern UI/UX
-Glassmorphism design with frosted cards
-Blue → cyan gradient theme (#3b82f6 → #06b6d4)
-Smooth animations and transitions
-Fully responsive (mobile, tablet, desktop)
-Dark mode support 🌙
-🚀 Core Functionality
-📄 Resume Upload (PDF/DOCX)
-🤖 AI-based Resume Analysis
-🔍 Keyword Matching with Job Description
-📊 ATS Score (0–100)
-🧠 Skill Detection (technical + soft skills)
-💡 Improvement Suggestions
-📊 Analysis Capabilities
-Keyword density analysis
-Skill gap identification
-Experience breakdown
-Education verification
-Grammar & readability check
-ATS optimization scoring
-🛠️ Tech Stack
-Technology	Purpose
-Streamlit	Web app UI
-Python	Backend logic
-spaCy	NLP processing
-PyPDF2 / docx	Resume parsing
-Scikit-learn	Matching algorithms
-Matplotlib	Data visualization
-📦 Installation
-Prerequisites
-Python 3.8+
-pip
-Setup Steps
-git clone https://github.com/your-username/resume-analyzer.git
+📂 Input Data
+
+The system accepts resumes in the following formats:
+
+PDF (.pdf)
+Word Document (.docx)
+
+Users can also provide a job description to compare and improve resume matching.
+
+❓ Why Smart Resume Analyzer?
+
+Manual resume screening is time-consuming and inefficient. This system helps by:
+
+Automating resume evaluation
+Improving ATS compatibility
+Identifying missing skills and keywords
+Providing actionable suggestions
+⚙️ Key Features
+1. Resume Upload
+Upload resumes in PDF or DOCX format
+Extracts text content automatically
+2. AI-Based Analysis
+Uses NLP to analyze resume content
+Evaluates structure, skills, and experience
+3. Keyword Matching
+Compares resume with job description
+Calculates keyword match percentage
+4. ATS Score
+Generates a score (0–100)
+Indicates resume effectiveness
+5. Suggestions
+Provides tips to improve resume quality
+Highlights missing skills and keywords
+🧠 System Workflow
+Upload Resume → Text Extraction → NLP Processing →
+Keyword Matching → ATS Scoring → Suggestions → Output
+🛠️ Technologies Used
+Python
+Streamlit
+spaCy (NLP)
+Scikit-learn
+PyPDF2 / docx
+Matplotlib
+💾 How to Run
+Clone the repository
+git clone <repository-link>
+Navigate to project folder
 cd resume-analyzer
-
-python -m venv env
-env\Scripts\activate      # Windows
-source env/bin/activate   # macOS/Linux
-
+Install dependencies
 pip install -r requirements.txt
+Run the application
 streamlit run app.py
-🚀 Usage
-Upload Resume
-Drag & drop PDF or DOCX file
-Add Job Description
-Paste job description for better matching
-View Results
-ATS Score
-Keyword Match %
-Improvement Suggestions
-📋 Supported Formats
-Format	Extension	Support
-PDF	.pdf	✅
-Word	.docx	✅
-📁 Project Structure
-resume-analyzer/
-├── app.py
-├── analyzer.py
-├── utils/
-├── requirements.txt
-└── README.md
-💡 Tips
-Use clear headings (Skills, Experience, Education)
-Match keywords with job description
-Keep resume concise (1–2 pages)
-Avoid image-based resumes
-🐛 Troubleshooting
-
-App not running?
-
-python --version
-pip install --upgrade -r requirements.txt
-
-Resume not parsing?
-
-Ensure it is a text-based PDF
-Avoid scanned images
-
-Low ATS score?
-
-Add relevant keywords
-Use standard formatting
-🔮 Future Enhancements
-LinkedIn profile analysis
-AI resume rewriting
-Cover letter generator
+🎯 Applications
+Resume screening systems
+Job application optimization
+Career guidance tools
+HR automation systems
+🔮 Future Improvements
+AI-based resume rewriting
+LinkedIn profile integration
 Multi-language support
-Interview question suggestions
-🔒 Privacy
-Files processed locally
-No data stored or shared
-Secure and private
-🤝 Contributing
-Fork the repository
-Create a feature branch
-Commit changes
-Push and create a Pull Request
+Interview preparation suggestions
